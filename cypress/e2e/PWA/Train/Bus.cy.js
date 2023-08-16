@@ -26,8 +26,8 @@ context('Actions', () => {
 
 
           cy.get('.input-2-2-176').type('09128807316');
-          // if (cy.get('.popUpHeader-2-2-292)')==false){
-          //     cy.wait(2000)
+
+              cy.wait(2000)
           cy.get('.directionRTL-2-2-264').click();
           cy.get('#1000').type('7');
           cy.get('#1001').type('3');
@@ -54,13 +54,22 @@ context('Actions', () => {
             {
                 var searchOrgin = $frame.contents().find('.icon-input');
                 cy.wrap(searchOrgin).type("تهران");
+                cy.wrap(searchOrgin).type("مشهد");
+                cy.wrap(searchOrgin).type("اصفهان");
+                cy.wrap(searchOrgin).type("رشت");
+                cy.wrap(searchOrgin).type("یزد");
+                cy.wrap(searchOrgin).type("تبریز");
+                cy.wrap(searchOrgin).type("قم");
+                cy.wrap(searchOrgin).type("شهرکرد");
+                cy.wrap(searchOrgin).type("کرمان");
+
             })
 
-            cy.get('.iframe').then(function ($frame)
-            {
-                var Tehran = $frame.contents().find('.search-terminal-item');
-                cy.wrap(Tehran).click();
-            })
+            // cy.get('.iframe').then(function ($frame)
+            // {
+            //     var Tehran = $frame.contents().find('.search-terminal-item');
+            //     cy.wrap(Tehran).click();
+            // })
 
 
             // cy.get('#bus_home_origin_box').click();

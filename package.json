@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "@cypress/xpath": "^2.0.3",
     "cypress": "^12.17.3",
-    "cypress-iframe": "^1.0.1"
+    "start": "react-scripts --openssl-legacy-provider start"
+
   }
 }

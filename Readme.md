@@ -2,7 +2,7 @@
 
 ```bash
 ## install the node_modules
-npm install
+npm init -y
 ```
 ```bash
 ## Install Cypress via npm
@@ -24,7 +24,7 @@ npx cypress run
 ## cypress
  "12.17.3"
 ## node 
-"v18.16.0"
+"18.16.0"
 ```
 
 ## Navigate your browser to

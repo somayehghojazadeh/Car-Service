@@ -1,11 +1,11 @@
 const { defineConfig } = require("cypress");
 
+module.exports = defineConfig({
+  chromeWebSecurity: false,
+  e2e: {
+    setupNodeEvents(on, config) {
 
-
-      module.exports = defineConfig({
-        e2e: {
-          baseUrl:'https://pwa.dev.tasn.ir',
-          pageLoadTimeout:9000,
-        },
-
-      })
+      // implement node event listeners here
+    },
+  },
+});

@@ -2,19 +2,21 @@
 
 ```bash
 ## install the node_modules
-npm init -y
+npm install
 ```
 ```bash
 ## Install Cypress via npm
 npm install cypress --save-dev
+npx cypress install 
+npx cypress cache clear
 ```
 
 ## Cypress open or run
 
 ```bash
-## open cypress with Using npx
+## open cypress with npx
 npx cypress open
-## running cypress with Using npx
+## running cypress with npx
 npx cypress run
 ```
 
